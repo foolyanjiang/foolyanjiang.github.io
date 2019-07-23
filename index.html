@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>考研考前督促</title>
+<title>司考考前督促</title>
 </head>
 <body onload="getNowDate();timet()">
 	<div class="h2">
@@ -13,7 +13,7 @@
 
 	<style type="text/css">
 		body {
-			background: url('bg1.jpg');
+			background: url('bg2.jpg');
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
@@ -41,7 +41,7 @@
 				document.getElementById("info0").innerHTML = "你好啊小老弟，今天过得怎么样？";
 			}
 			while(n==1) {
-				var name=prompt("请输入您的名字","逗比");
+				var name=prompt("请输入您的名字","咩咩");
 				if (name!="null") {
 					var re=/[^\u4e00-\u9fa5]/;
 		            if(!re.test(name)) {
@@ -118,15 +118,15 @@
 				timeday = montht + dayt + 31;
 			}
 			if (kaoyanm-month < 0 || timeday <0) {
-				document.getElementById('info2').innerHTML = "中考已结束，出来嘿嘿嘿？";
+				document.getElementById('info2').innerHTML = "司法考试已结束，出来嘿嘿嘿？";
 				document.getElementById('info3').innerHTML = "还不滚去玩耍！";
 			}
 			else if (timeday ==0 || timeday == -1) {
-				document.getElementById('info2').innerHTML = "考研进行中，祝你金榜题名！";
+				document.getElementById('info2').innerHTML = "司法考试进行中，祝你金榜题名！";
 				document.getElementById('info3').innerHTML = "加油！加油！！加油！！！";				
 			}
 			else {
-				document.getElementById('info2').innerHTML = "距考研仅剩" + timeday + "天了！";
+				document.getElementById('info2').innerHTML = "距司法考试仅剩" + timeday + "天了！";
 				document.getElementById('info3').innerHTML = "还不滚去学习！";
 			}
 		}
