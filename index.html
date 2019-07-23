@@ -104,18 +104,18 @@
 			var montht = 0;
 			var timeday = 0;
 			var dayt = months[month-1]-day;
-			var kaoyanm = 12;
+			var kaoyanm = 8;
 			if (kaoyanm-month == 0) {
-				timeday = 21-day;
+				timeday = 31-day;
 			}
 			else if (kaoyanm-month == 1) {
-				timeday = dayt + 21;
+				timeday = dayt + 31;
 			}
 			else {
 				for (var i = month; i < months.length-(months.length-kaoyanm+1); i++) {
 					montht += months[i];
 				}
-				timeday = montht + dayt + 21;
+				timeday = montht + dayt + 31;
 			}
 			if (kaoyanm-month < 0 || timeday <0) {
 				document.getElementById('info2').innerHTML = "中考已结束，出来嘿嘿嘿？";
